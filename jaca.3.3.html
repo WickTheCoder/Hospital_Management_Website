@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bid Submitted Successfully</title>
+<style>
+body {
+background-color: #243147; /* Change background color to #243147 */
+text-align: center; /* Center align all content */
+color: black; /* Change the text color to white */
+font-weight: bold; /* Making all text content bold */
+}
+table {
+border: 3px solid black;
+padding: 20px;
+margin: auto;
+background-color: white; /* Optional: set table background color */
+}
+th, td {
+padding: 10px;
+text-align: left;
+border: 2px solid black;
+}
+input {
+font-weight: bold; /* Making input entries bold */
+}
+</style>
+</head>
+<body>
+<h1 style="color: #ebe713">Bid Submitted Successfully</h1>
+<form action="AuctionServlet" method="post">
+<table>
+<tr>
+<th><label for="itemId">Item ID:</label></th>
+<td><input type="text" id="itemId" name="itemId"></td>
+</tr>
+<tr>
+<th><label for="itemName">Item Name:</label></th>
+<td><input type="text" id="itemName" name="itemName"></td>
+</tr>
+<tr>
+<th><label for="yourName">Your Name:</label></th>
+<td><input type="text" id="yourName" name="yourName"></td>
+</tr>
+<tr>
+<th><label for="yourEmail">Your Email:</label></th>
+<td><input type="email" id="yourEmail" name="yourEmail"></td>
+</tr>
+<tr>
+<th><label for="amountBid">Amount Bid:</label></th>
+<td><input type="number" id="amountBid" name="amountBid"></td>
+</tr>
+<tr>
+<th><label for="autoIncrement">Auto increment bid to match other bidder:</label></th>
+<td>
+<select id="autoIncrement" name="autoIncrement">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+</td>
+</tr>
+</table>
+<input type="submit" value="Place Bid">
+<br>
+</form>
+</body>
+</html>
